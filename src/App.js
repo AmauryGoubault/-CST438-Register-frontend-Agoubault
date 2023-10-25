@@ -3,6 +3,7 @@ import {BrowserRouter, Switch, Route, Link} from 'react-router-dom';
 import StudentHome from './components/StudentHome';
 import AdminHome from './components/AdminHome';
 import ShowSchedule from './components/ShowSchedule';
+import login from './components/login';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
               <Route exact path="/" component={StudentHome} />
               <Route path="/schedule" component={ShowSchedule} />
               <Route path="/admin" component={AdminHome} />
+              <Route path="/login" component={login} />
               <Route render={ () => <h1>Page not found</h1>} />
             </Switch>
           </div>
